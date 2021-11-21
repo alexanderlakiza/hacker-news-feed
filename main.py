@@ -88,7 +88,7 @@ def update_recs():
     news = get_news("https://news.ycombinator.com/newest", 4)
     top_news = get_news("https://news.ycombinator.com/", 2)
     news.extend(top_news)
-    
+
     for n in range(len(news)):
         row = News(title=news[n]["title"],
                    author=news[n]["author"],
